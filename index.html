@@ -1,70 +1,92 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>وب‌سایت شخصی من</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <div class="toggle-theme" onclick="toggleTheme()">🌓</div>
-    <nav>
-      <ul>
-        <li><a href="#about" data-i18n="about">معرفی</a></li>
-        <li><a href="#skills" data-i18n="skills">مهارت‌ها</a></li>
-        <li><a href="#projects" data-i18n="projects">پروژه‌ها</a></li>
-        <li><a href="#articles" data-i18n="articles">مقالات</a></li>
-        <li><a href="#contact" data-i18n="contact">تماس با من</a></li>
-        <li><a href="cv.pdf" download data-i18n="cv">رزومه</a></li>
-      </ul>
-    </nav>
-    <div class="lang-switch">
-      <button onclick="changeLang('fa')">FA</button>
-      <button onclick="changeLang('en')">EN</button>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ارشیا مقبل | برنامه‌نویس Swift و Python</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <style>
+      body {
+        font-family: 'Vazirmatn', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white">
+    <header class="p-6 flex justify-between items-center bg-gradient-to-r from-blue-900 to-black shadow-lg">
+      <h1 class="text-2xl font-bold">ارشیا مقبل</h1>
+      <nav class="space-x-4">
+        <a href="#skills" class="hover:text-blue-400">مهارت‌ها</a>
+        <a href="#projects" class="hover:text-blue-400">پروژه‌ها</a>
+        <a href="#contact" class="hover:text-blue-400">تماس</a>
+        <a href="#cv" class="hover:text-blue-400">رزومه</a>
+        <a href="#blog" class="hover:text-blue-400">مقالات</a>
+      </nav>
+    </header>
 
-  <main>
-    <section id="about">
-      <h1 data-i18n="about_title">سلام! من یک توسعه‌دهنده هستم</h1>
-      <p data-i18n="about_desc">به وب‌سایت شخصی من خوش آمدید.</p>
+    <section class="p-8 text-center" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-4">درباره من</h2>
+      <p>
+        من ارشیا مقبل هستم، برنامه‌نویس Swift و Python، عاشق تکنولوژی، هنر و طراحی. به دنبال خلق
+        چیزهای زیبا، کاربردی و هوشمند برای آینده‌ای روشن‌تر هستم.
+      </p>
     </section>
 
-    <section id="skills">
-      <h2 data-i18n="skills">مهارت‌ها</h2>
-      <ul>
-        <li>Swift</li>
-        <li>Python</li>
-        <li>WordPress</li>
-      </ul>
-    </section>
-
-    <section id="projects">
-      <h2 data-i18n="projects">پروژه‌ها</h2>
-      <p>در حال حاضر پروژه خاصی ندارم.</p>
-    </section>
-
-    <section id="articles">
-      <h2 data-i18n="articles">مقالات</h2>
-      <p>به زودی...</p>
-    </section>
-
-    <section id="contact">
-      <h2 data-i18n="contact">تماس با من</h2>
-      <p>Email: arshiamoghbel@icloud.com</p>
-    </section>
-
-    <section id="socials">
-      <h2 data-i18n="socials">شبکه‌های اجتماعی</h2>
-      <ul>
-        <li><a href="#">GitHub</a></li>
-        <li><a href="#">LinkedIn</a></li>
-        <li><a href="#">Instagram</a></li>
+    <section id="skills" class="p-8 bg-gray-900" data-aos="fade-right">
+      <h2 class="text-2xl font-bold mb-4">مهارت‌ها</h2>
+      <ul class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <li class="bg-gray-800 p-4 rounded-xl">Swift</li>
+        <li class="bg-gray-800 p-4 rounded-xl">Python</li>
+        <li class="bg-gray-800 p-4 rounded-xl">WordPress</li>
+        <li class="bg-gray-800 p-4 rounded-xl">HTML / CSS</li>
+        <li class="bg-gray-800 p-4 rounded-xl">Git & GitHub</li>
+        <li class="bg-gray-800 p-4 rounded-xl">UI/UX</li>
+        <li class="bg-gray-800 p-4 rounded-xl">Responsive Design</li>
+        <li class="bg-gray-800 p-4 rounded-xl">TailwindCSS</li>
       </ul>
     </section>
-  </main>
 
-  <script src="script.js"></script>
-</body>
+    <section id="projects" class="p-8" data-aos="fade-left">
+      <h2 class="text-2xl font-bold mb-4">پروژه‌ها</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-gray-800 p-6 rounded-xl shadow-md">
+          <h3 class="text-xl font-semibold mb-2">پروژه نمونه ۱</h3>
+          <p>توضیح کوتاه درباره این پروژه و تکنولوژی‌های استفاده شده.</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-xl shadow-md">
+          <h3 class="text-xl font-semibold mb-2">پروژه نمونه ۲</h3>
+          <p>توضیح کوتاه درباره این پروژه و تکنولوژی‌های استفاده شده.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cv" class="p-8 bg-gray-900" data-aos="zoom-in">
+      <h2 class="text-2xl font-bold mb-4">رزومه</h2>
+      <a
+        href="/assets/ArshiaMoghbel_CV.pdf"
+        class="bg-blue-700 hover:bg-blue-800 text-white px-6 py-2 rounded-full"
+        download
+      >دانلود CV</a>
+    </section>
+
+    <section id="contact" class="p-8" data-aos="fade-up">
+      <h2 class="text-2xl font-bold mb-4">تماس با من</h2>
+      <p>برای همکاری می‌توانید با ایمیل من در ارتباط باشید:</p>
+      <a href="mailto:arshiamoghbel@icloud.com" class="text-blue-400">arshiamoghbel@icloud.com</a>
+    </section>
+
+    <footer class="bg-gray-900 p-6 text-center mt-10">
+      <div class="flex justify-center gap-4">
+        <a href="https://github.com/arshia-moghbel" target="_blank">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Instagram</a>
+      </div>
+      <p class="mt-4 text-sm">© 2025 Arshia Moghbel</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
