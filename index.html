@@ -3,37 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ارشیا مقبل | برنامه‌نویس Swift و Python</title>
+    <title>ارشیا مقبل | Arshia Moghbel</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <style>
       body {
         font-family: 'Vazirmatn', sans-serif;
       }
+      .lang-toggle {
+        cursor: pointer;
+      }
     </style>
   </head>
   <body class="bg-black text-white">
     <header class="p-6 flex justify-between items-center bg-gradient-to-r from-blue-900 to-black shadow-lg">
-      <h1 class="text-2xl font-bold">ارشیا مقبل</h1>
-      <nav class="space-x-4">
-        <a href="#skills" class="hover:text-blue-400">مهارت‌ها</a>
-        <a href="#projects" class="hover:text-blue-400">پروژه‌ها</a>
-        <a href="#contact" class="hover:text-blue-400">تماس</a>
-        <a href="#cv" class="hover:text-blue-400">رزومه</a>
-        <a href="#blog" class="hover:text-blue-400">مقالات</a>
+      <h1 class="text-2xl font-bold"><span class="lang fa">ارشیا مقبل</span><span class="lang en hidden">Arshia Moghbel</span></h1>
+      <nav class="space-x-4 flex gap-4">
+        <a href="#skills" class="hover:text-blue-400 lang fa">مهارت‌ها</a>
+        <a href="#projects" class="hover:text-blue-400 lang fa">پروژه‌ها</a>
+        <a href="#contact" class="hover:text-blue-400 lang fa">تماس</a>
+        <a href="#cv" class="hover:text-blue-400 lang fa">رزومه</a>
+        <a href="#blog" class="hover:text-blue-400 lang fa">مقالات</a>
+
+        <a href="#skills" class="hover:text-blue-400 lang en hidden">Skills</a>
+        <a href="#projects" class="hover:text-blue-400 lang en hidden">Projects</a>
+        <a href="#contact" class="hover:text-blue-400 lang en hidden">Contact</a>
+        <a href="#cv" class="hover:text-blue-400 lang en hidden">Resume</a>
+        <a href="#blog" class="hover:text-blue-400 lang en hidden">Articles</a>
+
+        <span class="lang-toggle hover:text-blue-400">🌐</span>
       </nav>
     </header>
 
     <section class="p-8 text-center" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-4">درباره من</h2>
-      <p>
+      <h2 class="text-3xl font-bold mb-4 lang fa">درباره من</h2>
+      <h2 class="text-3xl font-bold mb-4 lang en hidden">About Me</h2>
+      <p class="lang fa">
         من ارشیا مقبل هستم، برنامه‌نویس Swift و Python، عاشق تکنولوژی، هنر و طراحی. به دنبال خلق
         چیزهای زیبا، کاربردی و هوشمند برای آینده‌ای روشن‌تر هستم.
+      </p>
+      <p class="lang en hidden">
+        I'm Arshia Moghbel, a Swift and Python developer passionate about technology, art, and design. I strive to build elegant, practical, and smart things for a brighter future.
       </p>
     </section>
 
     <section id="skills" class="p-8 bg-gray-900" data-aos="fade-right">
-      <h2 class="text-2xl font-bold mb-4">مهارت‌ها</h2>
+      <h2 class="text-2xl font-bold mb-4 lang fa">مهارت‌ها</h2>
+      <h2 class="text-2xl font-bold mb-4 lang en hidden">Skills</h2>
       <ul class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <li class="bg-gray-800 p-4 rounded-xl">Swift</li>
         <li class="bg-gray-800 p-4 rounded-xl">Python</li>
@@ -47,31 +63,42 @@
     </section>
 
     <section id="projects" class="p-8" data-aos="fade-left">
-      <h2 class="text-2xl font-bold mb-4">پروژه‌ها</h2>
+      <h2 class="text-2xl font-bold mb-4 lang fa">پروژه‌ها</h2>
+      <h2 class="text-2xl font-bold mb-4 lang en hidden">Projects</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div class="bg-gray-800 p-6 rounded-xl shadow-md">
-          <h3 class="text-xl font-semibold mb-2">پروژه نمونه ۱</h3>
-          <p>توضیح کوتاه درباره این پروژه و تکنولوژی‌های استفاده شده.</p>
+          <h3 class="text-xl font-semibold mb-2 lang fa">پروژه نمونه ۱</h3>
+          <h3 class="text-xl font-semibold mb-2 lang en hidden">Sample Project 1</h3>
+          <p class="lang fa">توضیح کوتاه درباره این پروژه و تکنولوژی‌های استفاده شده.</p>
+          <p class="lang en hidden">Short description about this project and used technologies.</p>
         </div>
         <div class="bg-gray-800 p-6 rounded-xl shadow-md">
-          <h3 class="text-xl font-semibold mb-2">پروژه نمونه ۲</h3>
-          <p>توضیح کوتاه درباره این پروژه و تکنولوژی‌های استفاده شده.</p>
+          <h3 class="text-xl font-semibold mb-2 lang fa">پروژه نمونه ۲</h3>
+          <h3 class="text-xl font-semibold mb-2 lang en hidden">Sample Project 2</h3>
+          <p class="lang fa">توضیح کوتاه درباره این پروژه و تکنولوژی‌های استفاده شده.</p>
+          <p class="lang en hidden">Short description about this project and used technologies.</p>
         </div>
       </div>
     </section>
 
     <section id="cv" class="p-8 bg-gray-900" data-aos="zoom-in">
-      <h2 class="text-2xl font-bold mb-4">رزومه</h2>
+      <h2 class="text-2xl font-bold mb-4 lang fa">رزومه</h2>
+      <h2 class="text-2xl font-bold mb-4 lang en hidden">Resume</h2>
       <a
         href="/assets/ArshiaMoghbel_CV.pdf"
         class="bg-blue-700 hover:bg-blue-800 text-white px-6 py-2 rounded-full"
         download
-      >دانلود CV</a>
+      >
+        <span class="lang fa">دانلود رزومه</span>
+        <span class="lang en hidden">Download CV</span>
+      </a>
     </section>
 
     <section id="contact" class="p-8" data-aos="fade-up">
-      <h2 class="text-2xl font-bold mb-4">تماس با من</h2>
-      <p>برای همکاری می‌توانید با ایمیل من در ارتباط باشید:</p>
+      <h2 class="text-2xl font-bold mb-4 lang fa">تماس با من</h2>
+      <h2 class="text-2xl font-bold mb-4 lang en hidden">Contact</h2>
+      <p class="lang fa">برای همکاری می‌توانید با ایمیل من در ارتباط باشید:</p>
+      <p class="lang en hidden">For collaboration, feel free to reach out via email:</p>
       <a href="mailto:arshiamoghbel@icloud.com" class="text-blue-400">arshiamoghbel@icloud.com</a>
     </section>
 
@@ -87,6 +114,15 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+
+      document.querySelector('.lang-toggle').addEventListener('click', () => {
+        document.querySelectorAll('.lang').forEach((el) => {
+          el.classList.toggle('hidden');
+        });
+        const html = document.documentElement;
+        html.lang = html.lang === 'fa' ? 'en' : 'fa';
+        html.dir = html.dir === 'rtl' ? 'ltr' : 'rtl';
+      });
     </script>
   </body>
 </html>
