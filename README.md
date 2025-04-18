@@ -2,7 +2,7 @@
 
 <h1 align="center">Welcome to Arshia's LuxTech World!</h1>
 <h3 align="center">I'm Arshia Moghbel — a passionate Swift & Python developer from Iran, obsessed with Apple, luxury tech, and all things elegant. I dream big, aim high, and code like art. Explore my world of futuristic ideas, clean code, and premium innovation.</h3>
-<p align="left"> <a href="https://www.linkedin.com/in/arshiamoghbel/" target="blank"><img src="https://img.shields.io/twitter/follow/xno1n?logo=twitter&style=for-the-badge" alt="arshiamoghbel" /></a> </p>
+<p align="left"> <a href="https://www.linkedin.com/in/arshiamoghbel/" target="blank"><img src="https://img.shields.io/twitter/follow/arshia?logo=twitter&style=for-the-badge" alt="arshiamoghbel" /></a> </p>
 
 - 🔭 I’m currently working on a medical imaging analysis project using CNNs and NLP for scientific publishing.
 
