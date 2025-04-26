@@ -1,119 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arshia Moghbel - Swift & Python Developer</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <style>
-        body {
-            background-color: #0a0a0a;
-            color: #ffd700;
-            font-family: 'Helvetica Neue', sans-serif;
-        }
-        .project-box {
-            background: linear-gradient(145deg, #1a1a1a, #0f0f0f);
-            border: 1px solid #ffd700;
-            border-radius: 12px;
-            padding: 20px;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .project-box:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 24px rgba(255, 215, 0, 0.5);
-        }
-    </style>
-</head>
-<body class="p-8">
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=30&pause=1000&color=FFD700&background=000000&center=true&vCenter=true&width=800&lines=Hi!+I'm+Arshia+Moghbel;Swift+%26+Python+Developer;AI+%2B+Healthcare+Enthusiast" alt="Typing SVG" />
+</p>
 
-    <header class="text-center mb-12">
-        <h1 class="text-4xl font-bold mb-4">
-            <span id="typed"></span>
-        </h1>
-        <p class="text-xl">Swift & Python Developer</p>
-    </header>
+---
 
-    <section class="mb-12">
-        <h2 class="text-2xl font-semibold mb-4">About Me</h2>
-        <p>
-            Hi! I’m Arshia Moghbel, a passionate software engineer building elegant solutions with Swift and Python.
-            I combine AI and healthcare interests by working on projects like medical image analysis and natural language
-            processing (NLP)... (متن کامل درباره من که قبل نوشته بودیم)
-        </p>
-    </section>
+# 💫 Arshia Moghbel — Swift & Python Developer
 
-    <section class="mb-12">
-        <h2 class="text-2xl font-semibold mb-4">Skills</h2>
-        <ul class="list-disc list-inside">
-            <li>Programming Languages: Swift, Python</li>
-            <li>AI & ML: CNNs, NLP, TensorFlow/PyTorch</li>
-            <li>Developer Tools: Git, GitHub Actions, Docker, Xcode, XCTest, Core ML, Create ML</li>
-            <li>Practices: CI/CD, Clean Code, Agile methodologies</li>
-            <li>Other: HTML/CSS/JavaScript basics</li>
-        </ul>
-    </section>
+> **"Every line of code is a step toward innovation."**
 
-    <section class="mb-12">
-        <h2 class="text-2xl font-semibold mb-4">Projects</h2>
-        <div class="grid md:grid-cols-2 gap-6">
-            <div class="project-box">
-                <h3 class="text-xl font-bold mb-2">Medical Image Analysis (CNN)</h3>
-                <p>
-                    I developed a system that analyzes medical scans using convolutional neural networks. The CNN automatically extracts features from images (e.g. MRI or X-ray) to assist in diagnosis...
-                </p>
-            </div>
-            <div class="project-box">
-                <h3 class="text-xl font-bold mb-2">Medical NLP</h3>
-                <p>
-                    Applied NLP techniques to clinical text for parsing and summarizing medical records and research abstracts, unlocking insights from unstructured clinical notes...
-                </p>
-            </div>
-            <div class="project-box">
-                <h3 class="text-xl font-bold mb-2">Swift App Development</h3>
-                <p>
-                    Built an iOS app in Swift for health data tracking, demonstrating polished user experiences and backend logic integration.
-                </p>
-            </div>
-        </div>
-    </section>
 
-    <section class="mb-12">
-        <h2 class="text-2xl font-semibold mb-4">How to Connect</h2>
-        <ul class="list-disc list-inside">
-            <li>LinkedIn: Arshia Moghbel</li>
-            <li>Instagram: @arshia__m__2008</li>
-            <li>Email: arshiamoghbel@icloud.com</li>
-        </ul>
-    </section>
+Hi! I’m **Arshia Moghbel**, a passionate software engineer building elegant solutions with Swift and Python. 
 
-    <section class="mb-12">
-        <h2 class="text-2xl font-semibold mb-4">GitHub Stats</h2>
-        <p>
-            I use GitHub profile charts and README stats to highlight my activity and skills, including my contribution graph and pinned repositories...
-        </p>
-    </section>
+I combine **AI** and **healthcare** interests by working on projects like **medical image analysis** and **natural language processing (NLP)**.
+Deep learning methods (especially **CNNs**) are highly effective for medical image segmentation and classification, which is exactly my area of focus.
+Similarly, **NLP** is rapidly transforming healthcare — my projects mirror these trends.
 
-    <section class="mb-12">
-        <h2 class="text-2xl font-semibold mb-4">Trophies</h2>
-        <p>
-            GitHub Profile Trophies show my achievements and contributions in open-source development.
-        </p>
-    </section>
+I’m constantly learning tools that boost productivity and code quality, like **GitHub Actions** (for CI/CD workflows) and **Docker** (for reliable deployments).
+Also, I practice **Machine Learning** and **Clean Code** principles to deliver readable, maintainable solutions.
 
-    <section class="text-center mt-16">
-        <p class="italic">"Every line of code is a step toward innovation."</p>
-    </section>
+---
 
-    <script>
-        var typed = new Typed('#typed', {
-            strings: ['Arshia Moghbel', 'Swift & Python Developer', 'AI and Healthcare Enthusiast'],
-            typeSpeed: 70,
-            backSpeed: 40,
-            backDelay: 1500,
-            loop: true
-        });
-    </script>
+## 🔨 Skills
 
-</body>
-</html>
+- **Programming Languages**: Swift (iOS/macOS development), Python (data science, ML)
+- **AI & ML**: CNNs, NLP, TensorFlow/PyTorch, Data Analysis
+- **Developer Tools**: Git, GitHub Actions, Docker, Xcode, XCTest, Core ML, Create ML
+- **Practices**: CI/CD, Clean Code, Test-Driven Development, Agile Methodologies
+- **Other**: HTML/CSS/JavaScript basics, version control, collaboration
+
+---
+
+## 🌟 Highlighted Projects
+
+| Project | Description |
+|:---|:---|
+| 🏥 **Medical Image Analysis (CNN)** | Built a system that analyzes medical scans (MRI/X-ray) using CNNs for segmentation and anomaly detection. |
+| 🔢 **Medical NLP** | Applied NLP to parse and summarize clinical records and research abstracts. |
+| 📱 **Swift Health App** | Developed an iOS app to track health data using Swift and Apple frameworks. |
+
+---
+
+## 💬 How to Connect
+
+- [LinkedIn 👤](https://linkedin.com/in/arshia-moghbel)
+- [Instagram 📸](https://instagram.com/arshia__m__2008)
+- [Email 📧](mailto:arshiamoghbel@icloud.com)
+
+---
+
+## 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=ArshiaMoghbel&show_icons=true&theme=radical&title_color=FFD700&icon_color=FFD700&text_color=FFFFFF&bg_color=000000" alt="GitHub Stats" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ArshiaMoghbel&theme=radical&background=000000&stroke=FFD700" alt="GitHub Streak" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=ArshiaMoghbel&theme=radical&no-bg=true&margin-w=15&row=2&title=MultiLanguage,Commit,Repositories,PullRequest" alt="GitHub Trophies" />
+</p>
+
+---
+
+<p align="center">
+  📣 <strong>Let's Collaborate and Build Amazing Things Together!</strong>
+</p>
