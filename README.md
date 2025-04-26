@@ -1,46 +1,71 @@
-<img align="header" alt="Coding" width="1000" src="https://media1.giphy.com/media/ZVik7pBtu9dNS/giphy.gif?cid=790b761118d241fc104d2ecc0a4c556c07e357cf900e95ed&rid=giphy.gif&ct=g">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arshia Moghbel | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #000000;
+      color: #FFD700;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+    .project-card {
+      background: #111;
+      border: 1px solid #FFD700;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px #ffd70080;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col items-center p-6">
 
-<h1 align="center">Welcome to Arshia's LuxTech World!</h1>
-<h3 align="center">I'm Arshia Moghbel — a passionate Swift & Python developer from Iran, obsessed with Apple, luxury tech, and all things elegant. I dream big, aim high, and code like art. Explore my world of futuristic ideas, clean code, and premium innovation.</h3>
+  <!-- Header with Typing Animation -->
+  <h1 class="text-4xl md:text-6xl font-bold text-center my-10">
+    <span id="typed"></span>
+  </h1>
 
-<p align="left"> <a href="https://www.linkedin.com/in/arshiamoghbel/" target="blank"><img src="https://img.shields.io/twitter/follow/arshiamoghbel?logo=twitter&style=for-the-badge" alt="arshiamoghbel" /></a> </p>
+  <!-- Projects Section -->
+  <section class="w-full max-w-6xl">
+    <h2 class="text-3xl font-semibold mb-6 border-b border-yellow-500 pb-2">Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-- 🔭 I’m currently working on a **medical imaging analysis project** using **CNNs** and **NLP** for scientific publishing.
+      <div class="project-card p-6 rounded-2xl">
+        <h3 class="text-2xl font-bold mb-2">Medical Image Analysis</h3>
+        <p class="text-base">Deep Learning model for tumor detection using CNNs.</p>
+      </div>
 
-- 🌱 I’m currently learning **GitHub Actions, Docker, Machine Learning, and Clean Code principles**.
+      <div class="project-card p-6 rounded-2xl">
+        <h3 class="text-2xl font-bold mb-2">Swift App Development</h3>
+        <p class="text-base">iOS applications built with Swift and SwiftUI for seamless UX/UI.</p>
+      </div>
 
-- 👨‍💻 All of my projects are available at [https://github.com/arshiamoghbel](https://github.com/arshiamoghbel)
+      <div class="project-card p-6 rounded-2xl">
+        <h3 class="text-2xl font-bold mb-2">NLP Text Classifier</h3>
+        <p class="text-base">A machine learning project that classifies text using NLP techniques.</p>
+      </div>
 
-- 💬 Ask me about **Swift, Python, AI, Clean Architecture, and building elegant UX**.
+    </div>
+  </section>
 
-- 📫 How to reach me: **arshiamoghbel@icloud.com**
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed('#typed', {
+      strings: [
+        "Hi, I'm Arshia Moghbel",
+        "Swift & Python Developer",
+        "AI & Technology Enthusiast"
+      ],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true
+    });
+  </script>
 
-- 📄 Know about my experiences [here](https://github.com/arshiamoghbel)
-
-- ⚡ Fun fact: **I love coding premium digital products while listening to Hayedeh and dreaming of Silicon Valley.**
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/arshiamoghbel/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" height="30" width="40" /></a>
-<a href="https://instagram.com/arshiamoghbel" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="Instagram" height="30" width="40" /></a>
-</p>
-
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> 
-<a href="https://www.swift.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg" alt="swift" width="40" height="40"/> </a> 
-<a href="https://www.python.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> 
-<a href="https://developer.apple.com/xcode/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/xcode/xcode-original.svg" alt="xcode" width="40" height="40"/> </a> 
-<a href="https://wordpress.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/wordpress/wordpress-original.svg" alt="wordpress" width="40" height="40"/> </a> 
-<a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> 
-<a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> 
-<a href="https://www.photoshop.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a> 
-<a href="https://www.apple.com/logic-pro/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/logicpro/logicpro-original.svg" alt="logicpro" width="40" height="40"/> </a> 
-</p>
-
-<h3 align="left">My Activity:</h3>
-
-[![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=arshiamoghbel&theme=github-dark&hide_border=true&background=000000&stroke=00DD14&ring=00DD14&fire=00DD14)](https://git.io/streak-stats)
-
-<h3 align="left">My Trophy:</h3>
-
-[![trophy](https://github-profile-trophy.vercel.app/?username=arshiamoghbel&theme=matrix)](https://github.com/arshiamoghbel)
+</body>
+</html>
