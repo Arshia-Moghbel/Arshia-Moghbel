@@ -1,31 +1,32 @@
-let currentLang = "fa";
-let translations = {};
+// script.js
 
-async function changeLang(lang) {
-  const res = await fetch(`lang/${lang}.json`);
-  translations = await res.json();
-  document.documentElement.lang = lang;
-  document.documentElement.dir = lang === "fa" ? "rtl" : "ltr";
-  currentLang = lang;
-  translate();
-}
+// Language toggle
+const langBtn = document.getElementById('lang-btn');
+const elements = document.querySelectorAll('[data-en], [data-fa]');
 
-function translate() {
-  document.querySelectorAll("[data-i18n]").forEach(el => {
-    const key = el.getAttribute("data-i18n");
-    if (translations[key]) el.innerText = translations[key];
+let currentLang = 'fa';
+
+function toggleLang() {
+  currentLang = currentLang === 'fa' ? 'en' : 'fa';
+  elements.forEach(el => {
+    el.innerText = el.getAttribute(`data-${currentLang}`);
   });
+  langBtn.innerText = currentLang === 'fa' ? 'English' : 'فارسی';
+  document.body.dir = currentLang === 'fa' ? 'rtl' : 'ltr';
 }
 
-function toggleTheme() {
-  if (document.body.classList.toggle("light")) {
-    document.documentElement.style.setProperty("--bg", "#ffffff");
-    document.documentElement.style.setProperty("--text", "#111111");
-  } else {
-    document.documentElement.style.setProperty("--bg", "#0a0a0a");
-    document.documentElement.style.setProperty("--text", "#e0e0e0");
-  }
-}
+langBtn.addEventListener('click', toggleLang);
 
-// Load default language
-changeLang(currentLang);
+// Scroll animation
+const sections = document.querySelectorAll('section');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.animationPlayState = 'running';
+    }
+  });
+}, { threshold: 0.1 });
+
+sections.forEach(section => {
+  observer.observe(section);
+});
