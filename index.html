@@ -1,70 +1,64 @@
 <!DOCTYPE html>
- <html lang="fa" dir="rtl">
- <head>
-   <meta charset="UTF-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>وب‌سایت شخصی من</title>
-   <link rel="stylesheet" href="style.css" />
- </head>
- <body>
-   <header>
-     <div class="toggle-theme" onclick="toggleTheme()">🌓</div>
-     <nav>
-       <ul>
-         <li><a href="#about" data-i18n="about">معرفی</a></li>
-         <li><a href="#skills" data-i18n="skills">مهارت‌ها</a></li>
-         <li><a href="#projects" data-i18n="projects">پروژه‌ها</a></li>
-         <li><a href="#articles" data-i18n="articles">مقالات</a></li>
-         <li><a href="#contact" data-i18n="contact">تماس با من</a></li>
-         <li><a href="cv.pdf" download data-i18n="cv">رزومه</a></li>
-       </ul>
-     </nav>
-     <div class="lang-switch">
-       <button onclick="changeLang('fa')">FA</button>
-       <button onclick="changeLang('en')">EN</button>
-     </div>
-   </header>
- 
-   <main>
-     <section id="about">
-       <h1 data-i18n="about_title">سلام! من یک توسعه‌دهنده هستم</h1>
-       <p data-i18n="about_desc">به وب‌سایت شخصی من خوش آمدید.</p>
-     </section>
- 
-     <section id="skills">
-       <h2 data-i18n="skills">مهارت‌ها</h2>
-       <ul>
-         <li>Swift</li>
-         <li>Python</li>
-         <li>WordPress</li>
-       </ul>
-     </section>
- 
-     <section id="projects">
-       <h2 data-i18n="projects">پروژه‌ها</h2>
-       <p>در حال حاضر پروژه خاصی ندارم.</p>
-     </section>
- 
-     <section id="articles">
-       <h2 data-i18n="articles">مقالات</h2>
-       <p>به زودی...</p>
-     </section>
- 
-     <section id="contact">
-       <h2 data-i18n="contact">تماس با من</h2>
-       <p>Email: arshiamoghbel@icloud.com</p>
-     </section>
- 
-     <section id="socials">
-       <h2 data-i18n="socials">شبکه‌های اجتماعی</h2>
-       <ul>
-         <li><a href="#">GitHub</a></li>
-         <li><a href="#">LinkedIn</a></li>
-         <li><a href="#">Instagram</a></li>
-       </ul>
-     </section>
-   </main>
- 
-   <script src="script.js"></script>
- </body>
- </html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arshia Moghbel</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">Arshia Moghbel</div>
+      <ul class="nav-links">
+        <li><a href="#about" data-i18n="about">درباره من</a></li>
+        <li><a href="#skills" data-i18n="skills">مهارت‌ها</a></li>
+        <li><a href="#projects" data-i18n="projects">پروژه‌ها</a></li>
+        <li><a href="#contact" data-i18n="contact">تماس</a></li>
+        <li><button id="langToggle">EN</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h1 data-i18n="hello">سلام! من ارشیا مقبل هستم</h1>
+      <p data-i18n="bio">برنامه‌نویس Swift و Python، عاشق تکنولوژی اپل، توسعه‌دهنده آینده‌نگر</p>
+    </section>
+
+    <section id="skills">
+      <h2 data-i18n="skills">مهارت‌ها</h2>
+      <ul>
+        <li>Python</li>
+        <li>Swift</li>
+        <li>WordPress</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2 data-i18n="projects">پروژه‌ها</h2>
+      <p data-i18n="comingSoon">به‌زودی پروژه‌های من اینجا قرار می‌گیرند...</p>
+    </section>
+
+    <section id="contact">
+      <h2 data-i18n="contact">تماس با من</h2>
+      <p>Email: arshiamoghbel@icloud.com</p>
+      <div class="social">
+        <a href="https://github.com/arshia-moghbel">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Arshia Moghbel</p>
+  </footer>
+</body>
+
+</html>
