@@ -1,47 +1,166 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ارشیا مقبل</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arshia Moghbel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(145deg, #e6ebf1, #ffffff);
+      color: #111;
+      line-height: 1.6;
+      padding: 2rem;
+      transition: background 0.3s;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #fff;
+      border-radius: 1rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #0066ff;
+    }
+
+    section.hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: white;
+      border-radius: 1.5rem;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+      margin-bottom: 2rem;
+      animation: fadeIn 1.2s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    section.hero h2 {
+      font-size: 2.7rem;
+      margin-bottom: 1rem;
+    }
+
+    section.hero p {
+      font-size: 1.2rem;
+      color: #666;
+    }
+
+    section.projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+      transition: transform 0.3s ease, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    #themeToggle {
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-size: 1rem;
+      color: #0066ff;
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <h1>سلام! من ارشیا مقبل هستم</h1>
+    <h1>Arshia Moghbel</h1>
     <nav>
-      <ul>
-        <li><a href="#about">درباره من</a></li>
-        <li><a href="#skills">مهارت‌ها</a></li>
-        <li><a href="#projects">پروژه‌ها</a></li>
-        <li><a href="#contact">تماس با من</a></li>
-      </ul>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="https://github.com/arshia-moghbel" target="_blank">GitHub</a>
+      <button id="themeToggle">🌓 حالت تاریک</button>
     </nav>
   </header>
-  <section id="about">
-    <h2>درباره من</h2>
-    <p>برنامه‌نویس Swift و Python، عاشق تکنولوژی اپل</p>
+
+  <section class="hero">
+    <h2>👋 سلام! من آرشیا هستم</h2>
+    <p>برنامه‌نویس، عاشق یادگیری و طراحی تجربه کاربری. اینجا می‌تونی با پروژه‌هام آشنا بشی.</p>
   </section>
-  <section id="skills">
-    <h2>مهارت‌ها</h2>
-    <ul>
-      <li>Swift</li>
-      <li>Python</li>
-      <li>WordPress</li>
-      <li>Git & GitHub</li>
-    </ul>
+
+  <section class="projects" id="projects">
+    <div class="card">
+      <h3>پروژه ۱</h3>
+      <p>توضیحی کوتاه درباره پروژه ۱. چی هست، با چی ساخته شده و چه مشکلی رو حل می‌کنه.</p>
+    </div>
+    <div class="card">
+      <h3>پروژه ۲</h3>
+      <p>توضیحی کوتاه درباره پروژه ۲. می‌تونی اینجا درباره ویژگی‌هاش بخونی.</p>
+    </div>
+    <!-- پروژه‌های بیشتر رو می‌تونی همینجا اضافه کنی -->
   </section>
-  <section id="projects">
-    <h2>پروژه‌ها</h2>
-    <p>در دست ساخت...</p>
-  </section>
-  <section id="contact">
-    <h2>تماس با من</h2>
-    <p>Email: arshiamoghbel@icloud.com</p>
-    <p><a href="#">GitHub</a> | <a href="#">LinkedIn</a> | <a href="#">Instagram</a></p>
-  </section>
-  <footer>
-    <p>© 2025 ارشیا مقبل</p>
+
+  <footer id="contact">
+    <p>ساخته شده با ❤️ توسط آرشیا مقدم</p>
   </footer>
+
+  <script>
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.body;
+
+    themeToggle.addEventListener('click', () => {
+      body.classList.toggle('dark');
+      if (body.classList.contains('dark')) {
+        body.style.background = '#1c1c1e';
+        body.style.color = '#f2f2f2';
+        themeToggle.textContent = '☀️ حالت روشن';
+      } else {
+        body.style.background = 'linear-gradient(145deg, #e6ebf1, #ffffff)';
+        body.style.color = '#111';
+        themeToggle.textContent = '🌓 حالت تاریک';
+      }
+    });
+  </script>
+
 </body>
+
 </html>
