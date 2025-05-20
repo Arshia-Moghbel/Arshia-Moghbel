@@ -31,21 +31,42 @@
       nav a,
       #themeToggle,
       .lang-select {
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 100%;
+        text-align: center;
       }
 
       section.hero h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        padding: 0 1rem;
+        white-space: normal !important;
+        overflow: visible !important;
+        animation: none !important;
       }
 
       section.hero p {
         font-size: 1rem;
+        padding: 0 1rem;
+      }
+
+      .typewriter::after {
+        display: none;
       }
 
       .card {
         transform: none !important;
         opacity: 1 !important;
+      }
+
+      form {
+        width: 100%;
+      }
+
+      section.contact input,
+      section.contact textarea,
+      section.contact button {
+        width: 100%;
       }
     }
 
@@ -485,7 +506,7 @@
       <a href="#resume" data-i18n="nav.resume">رزومه‌ی من</a>
       <a href="https://github.com/arshia-moghbel" target="_blank" data-i18n="nav.github">گیت هاب من</a>
       <span style="width: 1rem; display: inline-block;"></span>
-      <button id="themeToggle">🌓 حالت تاریک</button>
+      <button id="themeToggle">🌗 حالت تاریک</button>
       <select id="languageSelector" class="lang-select">
         <option value="fa">🇮🇷 فارسی</option>
         <option value="en">🇺🇸 English</option>
@@ -537,6 +558,9 @@
   <section class="contact" id="contact">
     <h3 data-i18n="contact.title">تماس با من</h3>
     <form action="https://formsubmit.co/arshiamoghbel@icloud.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_subject" value="پیام جدید از سایت شخصی ارشیا">
       <input type="text" name="name" placeholder="نام شما" required>
       <input type="email" name="email" placeholder="ایمیل شما" required>
       <textarea name="message" placeholder="پیام شما" rows="5" required></textarea>
@@ -555,9 +579,9 @@
     function updateThemeButtonText(lang) {
       const isDark = (window.matchMedia('(prefers-color-scheme: dark)').matches && !body.classList.contains('light')) || body.classList.contains('dark');
       if (lang === 'fa') {
-        themeToggle.textContent = isDark ? '☀️ حالت روشن' : '🌓 حالت تاریک';
+        themeToggle.textContent = isDark ? '☀️ حالت روشن' : '🌗 حالت تاریک';
       } else {
-        themeToggle.textContent = isDark ? '☀️ Light Mode' : '🌓 Dark Mode';
+        themeToggle.textContent = isDark ? '☀️ Light Mode' : '🌗 Dark Mode';
       }
     }
 
@@ -647,7 +671,7 @@
       "nav.github": "گیت هاب من",
       "site.owner": "ارشیا مقبل",
       "theme.toggle.light": "☀️ حالت روشن",
-      "theme.toggle.dark": "🌓 حالت تاریک"
+      "theme.toggle.dark": "🌗 حالت تاریک"
     },
     en: {
       "hero.greeting": "👋 Hi! I'm Arshia",
@@ -678,7 +702,7 @@
       "nav.github": "My GitHub",
       "site.owner": "Arshia Moghbel",
       "theme.toggle.light": "☀️ Light Mode",
-      "theme.toggle.dark": "🌓 Dark Mode"
+      "theme.toggle.dark": "🌗 Dark Mode"
     }
   };
 
