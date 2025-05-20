@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="رزومه، مقاله‌ها و پروژه‌های ارشیا مقبل - برنامه‌نویس و طراح تجربه کاربری" />
+  <meta name="keywords" content="ارشیا مقبل, Arshia Moghbel, رزومه, برنامه‌نویس, نمونه‌کار" />
+  <meta name="author" content="ارشیا مقبل" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#ffffff">
+  <title>ارشیا مقبل | رزومه و پروژه‌ها</title>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --main-bg: #f9f9f9;
+      --dark-bg: #121212;
+      --card-bg: #fff;
+      --dark-card: #1e1e1e;
+      --text: #222;
+      --dark-text: #eee;
+      --accent: #0066ff;
+    }
+
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      background: var(--main-bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      transition: all 0.3s ease;
+    }
+
+    body.dark {
+      background: var(--dark-bg);
+      color: var(--dark-text);
+    }
+
+    header, footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    nav a {
+      margin: 0 0.5rem;
+      text-decoration: none;
+      color: inherit;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 3rem 2rem;
+      text-align: center;
+      background: linear-gradient(135deg, #e3efff, #f6f9ff);
+      border-radius: 1.5rem;
+      margin: 2rem;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+    }
+
+    .typewriter::after {
+      content: "";
+      display: inline-block;
+      width: 1px;
+      height: 1.2em;
+      background: var(--text);
+      margin-left: 5px;
+      animation: blink 1s steps(1) infinite;
+    }
+
+    .done::after {
+      animation: none;
+      background: transparent;
+    }
+
+    @keyframes blink {
+      0%, 50% { opacity: 1; }
+      51%, 100% { opacity: 0; }
+    }
+
+    section {
+      margin: 3rem 2rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.07);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    body.dark .card {
+      background: var(--dark-card);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0, 102, 255, 0.1);
+    }
+
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 1rem;
+      margin: 0.5rem 0;
+      border-radius: 1rem;
+      border: none;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      font-family: inherit;
+      font-size: 1rem;
+    }
+
+    form button {
+      background: var(--accent);
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .language-switch {
+      cursor: pointer;
+      font-weight: bold;
+      padding: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>ارشیا مقبل</h1>
+    <nav>
+      <a href="#projects">پروژه‌ها</a>
+      <a href="#articles">مقالات</a>
+      <a href="#contact">تماس</a>
+      <a href="https://github.com/arshia-moghbel" target="_blank">GitHub</a>
+      <a href="https://cv.arshiamoghbel.ir" target="_blank">رزومه</a>
+      <span class="language-switch" onclick="switchLang()">🌐 EN</span>
+      <button id="themeToggle">🌓 حالت تاریک</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2 class="typewriter" id="typeText">👋 سلام! من ارشیا هستم</h2>
+    <p>برنامه‌نویس، عاشق یادگیری و طراحی تجربه کاربری. اینجا می‌تونی با پروژه‌هام آشنا بشی.</p>
+  </section>
+
+  <section class="projects" id="projects">
+    <h3>پروژه‌ها</h3>
+    <div class="card">
+      <h4>مدیریت وظایف</h4>
+      <p>اپلیکیشن Todo با قابلیت تگ، فیلتر و همگام‌سازی ابری با Firebase.</p>
+      <a href="https://github.com/arshia-moghbel/task-manager" target="_blank">مشاهده در گیت‌هاب</a>
+    </div>
+    <div class="card">
+      <h4>وب‌سایت شخصی</h4>
+      <p>طراحی واکنش‌گرا، دارک مود و SEO کامل. فقط با HTML/CSS و JS.</p>
+      <a href="https://arshiamoghbel.ir" target="_blank">مشاهده آنلاین</a>
+    </div>
+  </section>
+
+  <section class="articles" id="articles">
+    <h3>مقاله‌ها</h3>
+    <ul>
+      <li><a href="https://arshiamoghbel.ir/blog/clean-code" target="_blank">نکاتی درباره Clean Code</a></li>
+      <li><a href="https://arshiamoghbel.ir/blog/ux-vs-ui" target="_blank">تفاوت UX و UI</a></li>
+    </ul>
+  </section>
+
+  <section class="contact" id="contact">
+    <h3>تماس با من</h3>
+    <form action="https://formspree.io/f/mknqddka" method="POST">
+      <input type="text" name="name" placeholder="نام شما" required />
+      <input type="email" name="email" placeholder="ایمیل شما" required />
+      <textarea name="message" rows="5" placeholder="پیام شما" required></textarea>
+      <button type="submit">ارسال</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>ساخته شده با ❤️ توسط ارشیا مقبل</p>
+  </footer>
+
+  <script>
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.card').forEach(card => observer.observe(card));
+
+    setTimeout(() => {
+      document.getElementById('typeText').classList.add('done');
+    }, 3000);
+
+    function switchLang() {
+      window.location.href = "/en"; // برای زبان دوم به مسیر جدید بره
+    }
+  </script>
+</body>
+</html>
