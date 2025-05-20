@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html id="htmlTag" lang="fa" dir="rtl">
 
 <head>
   <meta charset="UTF-8" />
@@ -42,6 +42,22 @@
 
     header h1 {
       font-size: 1.8rem;
+    }
+
+    .lang-select {
+      padding: 0.4rem 1rem;
+      border-radius: 0.7rem;
+      border: 1px solid #aaa;
+      background: #fff;
+      font-weight: bold;
+      color: #333;
+      background-image: linear-gradient(to top left, #eee, #fff);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: all 0.3s;
+    }
+    .lang-select:hover {
+      border-color: #0066ff;
+      box-shadow: 0 0 8px #0066ff55;
     }
 
     nav a {
@@ -233,6 +249,32 @@
       box-shadow: 0 0 8px #0066ff88;
     }
 
+
+    section.articles, section.resume {
+      scroll-margin-top: 100px;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 1.5rem;
+      margin-top: 3rem;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    section.articles .card, section.resume .card {
+      margin-top: 1rem;
+    }
+
+    section.articles a, section.resume a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: #0066ff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    section.articles a:hover, section.resume a:hover {
+      text-decoration: underline;
+    }
+
     body.dark {
       background: #1c1c1e;
       color: #f2f2f2;
@@ -301,31 +343,6 @@
       box-shadow: 0 0 10px #007aff99;
     }
 
-    section.articles, section.resume {
-      scroll-margin-top: 100px;
-      background: #fff;
-      padding: 2rem;
-      border-radius: 1.5rem;
-      margin-top: 3rem;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-    }
-
-    section.articles .card, section.resume .card {
-      margin-top: 1rem;
-    }
-
-    section.articles a, section.resume a {
-      display: inline-block;
-      margin-top: 0.5rem;
-      color: #0066ff;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    section.articles a:hover, section.resume a:hover {
-      text-decoration: underline;
-    }
-
     body.dark section.articles,
     body.dark section.resume {
       background-color: #2c2c2e;
@@ -343,65 +360,147 @@
       box-shadow: 0 16px 40px rgba(255, 255, 255, 0.05);
       color: #f2f2f2;
     }
+
+    @media (prefers-color-scheme: dark) {
+      body:not(.light) {
+        background: #1c1c1e;
+        color: #f2f2f2;
+      }
+
+      body:not(.light) p,
+      body:not(.light) section.hero p {
+        color: #ccc;
+      }
+
+      body:not(.light) .card,
+      body:not(.light) section.hero,
+      body:not(.light) section.contact,
+      body:not(.light) header {
+        background-color: #2c2c2e;
+        color: #f2f2f2;
+      }
+
+      body:not(.light) nav a {
+        color: #ccc;
+      }
+
+      body:not(.light) nav a:hover {
+        color: #00bfff;
+      }
+
+      body:not(.light) #themeToggle {
+        color: #00bfff;
+        border: 1px solid #00bfff;
+        background-color: transparent;
+      }
+
+      body:not(.light) #themeToggle:hover {
+        background-color: #00bfff22;
+        box-shadow: 0 0 8px #00bfff88;
+      }
+
+      body:not(.light) input,
+      body:not(.light) textarea {
+        background-color: #3a3a3c;
+        color: #fff;
+        border: 1px solid #555;
+      }
+
+      body:not(.light) input::placeholder,
+      body:not(.light) textarea::placeholder {
+        color: #aaa;
+      }
+
+      body:not(.light) button {
+        background-color: #0051cc;
+      }
+
+      body:not(.light) button:hover {
+        background-color: #007aff;
+        box-shadow: 0 0 10px #007aff99;
+      }
+
+      body:not(.light) section.articles,
+      body:not(.light) section.resume {
+        background-color: #2c2c2e;
+        color: #f2f2f2;
+      }
+
+      body:not(.light) section.articles a,
+      body:not(.light) section.resume a {
+        color: #00b0ff;
+      }
+
+      body:not(.light) .card:hover {
+        background: linear-gradient(135deg, #2c2c2e 0%, #3a3a3c 100%);
+        box-shadow: 0 16px 40px rgba(255, 255, 255, 0.05);
+        color: #f2f2f2;
+      }
+    }
   </style>
 </head>
 
 <body>
   <header>
-    <h1><a href="#" style="text-decoration: none; color: inherit;">ارشیا مقبل</a></h1>
+    <h1><a href="#" style="text-decoration: none; color: inherit;" data-i18n="site.owner"></a></h1>
     <nav>
-      <a href="#contact">تماس با من</a>
-      <a href="#projects">پروژه‌های من</a>
-      <a href="#articles">مقاله‌های من</a>
-      <a href="#resume">رزومه‌ی من</a>
-      <a href="https://github.com/arshia-moghbel" target="_blank">گیت هاب من</a>
+      <a href="#contact" data-i18n="nav.contact">تماس با من</a>
+      <a href="#projects" data-i18n="nav.projects">پروژه‌های من</a>
+      <a href="#articles" data-i18n="nav.articles">مقاله‌های من</a>
+      <a href="#resume" data-i18n="nav.resume">رزومه‌ی من</a>
+      <a href="https://github.com/arshia-moghbel" target="_blank" data-i18n="nav.github">گیت هاب من</a>
+      <span style="width: 1rem; display: inline-block;"></span>
       <button id="themeToggle">🌓 حالت تاریک</button>
+      <select id="languageSelector" class="lang-select">
+        <option value="fa">🇮🇷 فارسی</option>
+        <option value="en">🇺🇸 English</option>
+      </select>
     </nav>
   </header>
 
   <!-- بخش معرفی (هیرو) -->
   <section class="hero">
-    <h2 class="typewriter" id="typeText">👋 سلام! من ارشیا هستم</h2>
-    <p>برنامه‌نویس، عاشق یادگیری و طراحی تجربه کاربری. اینجا می‌تونی با پروژه‌هام و بقیه کارام آشنا بشی.</p>
+    <h2 class="typewriter" id="typeText" data-i18n="hero.greeting">👋 سلام! من ارشیا هستم</h2>
+    <p data-i18n="hero.description">برنامه‌نویس، عاشق یادگیری و طراحی تجربه کاربری. اینجا می‌تونی با پروژه‌هام و بقیه کارام آشنا بشی.</p>
   </section>
 
   <!-- بخش پروژه‌ها -->
   <section class="projects" id="projects">
     <div class="card">
-      <h3>پروژه ۱</h3>
-      <p>توضیحی کوتاه درباره پروژه ۱. چی هست، با چی ساخته شده و چه مشکلی رو حل می‌کنه.</p>
+      <h3 data-i18n="projects.title1">پروژه ۱</h3>
+      <p data-i18n="projects.desc1">توضیحی کوتاه درباره پروژه ۱. چی هست، با چی ساخته شده و چه مشکلی رو حل می‌کنه.</p>
     </div>
     <div class="card">
-      <h3>پروژه ۲</h3>
-      <p>توضیحی کوتاه درباره پروژه ۲. می‌تونی اینجا درباره ویژگی‌هاش بخونی.</p>
+      <h3 data-i18n="projects.title2">پروژه ۲</h3>
+      <p data-i18n="projects.desc2">توضیحی کوتاه درباره پروژه ۲. می‌تونی اینجا درباره ویژگی‌هاش بخونی.</p>
     </div>
   </section>
 
   <!-- بخش مقاله‌ها -->
   <section class="articles" id="articles">
-    <h3>مقاله‌ها</h3>
+    <h3 data-i18n="articles.title">مقاله‌ها</h3>
     <div class="card">
-      <h4>عنوان مقاله اول</h4>
-      <p>چکیده‌ای از مقاله اول که به موضوعی علمی یا فنی می‌پردازد و شامل لینک برای مطالعه بیشتر است.</p>
-      <a href="#" target="_blank">مطالعه کامل مقاله</a>
+      <h4 data-i18n="articles.title1">عنوان مقاله اول</h4>
+      <p data-i18n="articles.desc1">چکیده‌ای از مقاله اول که به موضوعی علمی یا فنی می‌پردازد و شامل لینک برای مطالعه بیشتر است.</p>
+      <a href="#" target="_blank" data-i18n="articles.readmore">مطالعه کامل مقاله</a>
     </div>
     <div class="card">
-      <h4>عنوان مقاله دوم</h4>
-      <p>چکیده‌ای از مقاله دوم با توضیحاتی درباره محتوا یا هدف آن مقاله.</p>
-      <a href="#" target="_blank">مطالعه کامل مقاله</a>
+      <h4 data-i18n="articles.title2">عنوان مقاله دوم</h4>
+      <p data-i18n="articles.desc2">چکیده‌ای از مقاله دوم با توضیحاتی درباره محتوا یا هدف آن مقاله.</p>
+      <a href="#" target="_blank" data-i18n="articles.readmore">مطالعه کامل مقاله</a>
     </div>
   </section>
 
   <!-- بخش رزومه -->
   <section class="resume" id="resume">
-    <h3>رزومه</h3>
-    <p>در این بخش می‌تونی خلاصه‌ای از مهارت‌ها، تجربیات، و سوابق تحصیلی من رو بخونی. فایل کامل رزومه هم قابل دانلوده.</p>
-    <a href="assets/ArshiaMoghbel_Resume.pdf" target="_blank" download>📄 دانلود رزومه کامل</a>
+    <h3 data-i18n="resume.title">رزومه</h3>
+    <p data-i18n="resume.description">در این بخش می‌تونی خلاصه‌ای از مهارت‌ها، تجربیات، و سوابق تحصیلی من رو بخونی. فایل کامل رزومه هم قابل دانلوده.</p>
+    <a href="assets/ArshiaMoghbel_Resume.pdf" target="_blank" download data-i18n="resume.download">📄 دانلود رزومه کامل</a>
   </section>
 
   <!-- بخش تماس -->
   <section class="contact" id="contact">
-    <h3>تماس با من</h3>
+    <h3 data-i18n="contact.title">تماس با من</h3>
     <form action="https://formsubmit.co/arshiamoghbel@icloud.com" method="POST">
       <input type="text" name="name" placeholder="نام شما" required>
       <input type="email" name="email" placeholder="ایمیل شما" required>
@@ -411,15 +510,57 @@
   </section>
 
   <footer>
-    <p>ساخته شده با ❤️ توسط ارشیا مقبل</p>
+    <p data-i18n="footer.made">ساخته شده با ❤️ توسط ارشیا مقبل</p>
   </footer>
 
   <script>
     const themeToggle = document.getElementById('themeToggle');
     const body = document.body;
+
+    function updateThemeButtonText(lang) {
+      const isDark = (window.matchMedia('(prefers-color-scheme: dark)').matches && !body.classList.contains('light')) || body.classList.contains('dark');
+      if (lang === 'fa') {
+        themeToggle.textContent = isDark ? '☀️ حالت روشن' : '🌓 حالت تاریک';
+      } else {
+        themeToggle.textContent = isDark ? '☀️ Light Mode' : '🌓 Dark Mode';
+      }
+    }
+
+    function setTheme(mode, lang) {
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+      if (mode === 'dark') {
+        body.classList.add('dark');
+        body.classList.remove('light');
+      } else if (mode === 'light') {
+        body.classList.add('light');
+        body.classList.remove('dark');
+      } else {
+        // حالت پیش‌فرض سیستم
+        body.classList.remove('dark');
+        body.classList.remove('light');
+        if (prefersDark) {
+          body.classList.add('dark');
+        } else {
+          body.classList.add('light');
+        }
+      }
+
+      updateThemeButtonText(lang);
+    }
+
     themeToggle.addEventListener('click', () => {
-      body.classList.toggle('dark');
-      themeToggle.textContent = body.classList.contains('dark') ? '☀️ حالت روشن' : '🌓 حالت تاریک';
+      const isDark = body.classList.contains('dark');
+      const isLight = body.classList.contains('light');
+      const lang = localStorage.getItem('language') || 'fa';
+
+      if (!isDark && !isLight) {
+        setTheme('light', lang);
+      } else if (isDark) {
+        setTheme('light', lang);
+      } else {
+        setTheme('dark', lang);
+      }
     });
 
     const cards = document.querySelectorAll('.card');
@@ -440,6 +581,120 @@
       if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
         window.scrollTo(0, 0);
       }
+
+  const translations = {
+    fa: {
+      "hero.greeting": "👋 سلام! من ارشیا هستم",
+      "hero.description": "برنامه‌نویس، عاشق یادگیری و طراحی تجربه کاربری. اینجا می‌تونی با پروژه‌هام و بقیه کارام آشنا بشی.",
+      "projects.title1": "پروژه ۱",
+      "projects.desc1": "توضیحی کوتاه درباره پروژه ۱. چی هست، با چی ساخته شده و چه مشکلی رو حل می‌کنه.",
+      "projects.title2": "پروژه ۲",
+      "projects.desc2": "توضیحی کوتاه درباره پروژه ۲. می‌تونی اینجا درباره ویژگی‌هاش بخونی.",
+      "articles.title": "مقاله‌ها",
+      "articles.title1": "عنوان مقاله اول",
+      "articles.title2": "عنوان مقاله دوم",
+      "articles.desc1": "چکیده‌ای از مقاله اول که به موضوعی علمی یا فنی می‌پردازد و شامل لینک برای مطالعه بیشتر است.",
+      "articles.desc2": "چکیده‌ای از مقاله دوم با توضیحاتی درباره محتوا یا هدف آن مقاله.",
+      "articles.readmore": "مطالعه کامل مقاله",
+      "resume.title": "رزومه",
+      "resume.description": "در این بخش می‌تونی خلاصه‌ای از مهارت‌ها، تجربیات، و سوابق تحصیلی من رو بخونی. فایل کامل رزومه هم قابل دانلوده.",
+      "resume.download": "📄 دانلود رزومه کامل",
+      "contact.title": "تماس با من",
+      "contact.name": "نام شما",
+      "contact.email": "ایمیل شما",
+      "contact.message": "پیام شما",
+      "contact.send": "ارسال",
+      "footer.made": "ساخته شده با ❤️ توسط ارشیا مقبل",
+      "nav.contact": "تماس با من",
+      "nav.projects": "پروژه‌های من",
+      "nav.articles": "مقاله‌های من",
+      "nav.resume": "رزومه‌ی من",
+      "nav.github": "گیت هاب من",
+      "site.owner": "ارشیا مقبل",
+      "theme.toggle.light": "☀️ حالت روشن",
+      "theme.toggle.dark": "🌓 حالت تاریک"
+    },
+    en: {
+      "hero.greeting": "👋 Hi! I'm Arshia",
+      "hero.description": "Programmer, passionate about learning and UX design. Here you can check out my projects and more.",
+      "projects.title1": "Project 1",
+      "projects.desc1": "A short description of project 1. What it is, how it’s built, and what problem it solves.",
+      "projects.title2": "Project 2",
+      "projects.desc2": "A brief about project 2 and its key features.",
+      "articles.title": "Articles",
+      "articles.title1": "First Article Title",
+      "articles.title2": "Second Article Title",
+      "articles.desc1": "A summary of the first article, covering a technical or scientific topic, with a link to read more.",
+      "articles.desc2": "A summary of the second article, with details about its content or purpose.",
+      "articles.readmore": "Read Full Article",
+      "resume.title": "Resume",
+      "resume.description": "Here you can find a summary of my skills, experiences, and education. Full resume available for download.",
+      "resume.download": "📄 Download Full Resume",
+      "contact.title": "Contact Me",
+      "contact.name": "Your Name",
+      "contact.email": "Your Email",
+      "contact.message": "Your Message",
+      "contact.send": "Send",
+      "footer.made": "Made with ❤️ by Arshia Moghbel",
+      "nav.contact": "Contact",
+      "nav.projects": "My Projects",
+      "nav.articles": "My Articles",
+      "nav.resume": "My Resume",
+      "nav.github": "My GitHub",
+      "site.owner": "Arshia Moghbel",
+      "theme.toggle.light": "☀️ Light Mode",
+      "theme.toggle.dark": "🌓 Dark Mode"
+    }
+  };
+
+  const languageSelector = document.getElementById("languageSelector");
+
+  function updateLanguage(lang) {
+    const elements = document.querySelectorAll("[data-i18n]");
+    elements.forEach(el => {
+      const key = el.getAttribute("data-i18n");
+      if (translations[lang][key]) {
+        el.innerHTML = translations[lang][key];
+      }
+    });
+
+    // فرم
+    document.querySelector("input[name='name']").placeholder = translations[lang]["contact.name"];
+    document.querySelector("input[name='email']").placeholder = translations[lang]["contact.email"];
+    document.querySelector("textarea[name='message']").placeholder = translations[lang]["contact.message"];
+    document.querySelector("button[type='submit']").innerHTML = translations[lang]["contact.send"];
+
+    // جهت و زبان
+    document.getElementById("htmlTag").setAttribute("lang", lang);
+    document.getElementById("htmlTag").setAttribute("dir", lang === "fa" ? "rtl" : "ltr");
+
+    updateThemeButtonText(lang);
+  }
+
+  languageSelector.addEventListener("change", (e) => {
+    const lang = e.target.value;
+    updateLanguage(lang);
+  });
+
+  document.addEventListener('DOMContentLoaded', async () => {
+    let detectedLang = 'fa';
+
+    try {
+      const res = await fetch('https://ipapi.co/json/');
+      const data = await res.json();
+      const countryCode = data.country || 'IR';
+      if (countryCode !== 'IR') detectedLang = 'en';
+    } catch (err) {
+      console.warn('IP detection failed, defaulting to fa');
+    }
+
+    const lang = detectedLang;
+
+    languageSelector.value = lang;
+    updateLanguage(lang);
+
+    setTheme(null, lang);
+  });
   </script>
 </body>
 </html>
