@@ -218,10 +218,19 @@
 
     #themeToggle {
       cursor: pointer;
-      background: none;
-      border: none;
       font-size: 1rem;
+      font-weight: 600;
+      padding: 0.4rem 0.8rem;
+      border-radius: 0.7rem;
+      transition: all 0.3s ease;
+      border: 1px solid #0066ff;
+      background-color: transparent;
       color: #0066ff;
+    }
+
+    #themeToggle:hover {
+      background-color: #0066ff22;
+      box-shadow: 0 0 8px #0066ff88;
     }
 
     body.dark {
@@ -293,6 +302,7 @@
     }
 
     section.articles, section.resume {
+      scroll-margin-top: 100px;
       background: #fff;
       padding: 2rem;
       border-radius: 1.5rem;
@@ -326,6 +336,13 @@
     body.dark section.resume a {
       color: #00b0ff;
     }
+
+    /* جلوگیری از سفید شدن پس‌زمینه کارت‌ها در حالت دارک مود هنگام هاور */
+    body.dark .card:hover {
+      background: linear-gradient(135deg, #2c2c2e 0%, #3a3a3c 100%);
+      box-shadow: 0 16px 40px rgba(255, 255, 255, 0.05);
+      color: #f2f2f2;
+    }
   </style>
 </head>
 
@@ -345,7 +362,7 @@
   <!-- بخش معرفی (هیرو) -->
   <section class="hero">
     <h2 class="typewriter" id="typeText">👋 سلام! من ارشیا هستم</h2>
-    <p>برنامه‌نویس، عاشق یادگیری و طراحی تجربه کاربری. اینجا می‌تونی با پروژه‌هام آشنا بشی.</p>
+    <p>برنامه‌نویس، عاشق یادگیری و طراحی تجربه کاربری. اینجا می‌تونی با پروژه‌هام و بقیه کارام آشنا بشی.</p>
   </section>
 
   <!-- بخش پروژه‌ها -->
@@ -385,10 +402,10 @@
   <!-- بخش تماس -->
   <section class="contact" id="contact">
     <h3>تماس با من</h3>
-    <form>
-      <input type="text" placeholder="نام شما" required>
-      <input type="email" placeholder="ایمیل شما" required>
-      <textarea placeholder="پیام شما" rows="5" required></textarea>
+    <form action="https://formsubmit.co/arshiamoghbel@icloud.com" method="POST">
+      <input type="text" name="name" placeholder="نام شما" required>
+      <input type="email" name="email" placeholder="ایمیل شما" required>
+      <textarea name="message" placeholder="پیام شما" rows="5" required></textarea>
       <button type="submit">ارسال</button>
     </form>
   </section>
