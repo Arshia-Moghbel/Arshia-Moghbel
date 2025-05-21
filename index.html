@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ارشیا مقبل</title>
+  <title>Arshia Moghbel</title>
+  <link rel="icon" href="https://i.postimg.cc/wM3rWjKm/logo.webp" type="image/webp">
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     * {
@@ -17,14 +18,20 @@
     @media (max-width: 768px) {
       header {
         flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.8rem 1rem;
+      }
+
+      header h1 {
+        font-size: 1.4rem;
+        text-align: center;
       }
 
       nav {
         display: flex;
         flex-wrap: wrap;
-        gap: 0.5rem;
+        gap: 0.3rem;
         align-items: center;
       }
 
@@ -182,7 +189,7 @@
       display: inline-block;
       white-space: nowrap;
       overflow: hidden;
-      animation: typing 3s steps(30, end) forwards;
+      animation: typing 3.5s steps(30, end) forwards;
       position: relative;
     }
 
@@ -194,7 +201,7 @@
       bottom: 0;
       width: 2px;
       background: #111;
-      animation: blink 0.7s steps(1) infinite;
+      animation: blink 0s steps(1) infinite;
       animation-delay: 0s;
     }
 
@@ -557,7 +564,7 @@
   <!-- بخش تماس -->
   <section class="contact" id="contact">
     <h3 data-i18n="contact.title">تماس با من</h3>
-    <form action="https://formsubmit.co/arshiamoghbel@icloud.com" method="POST">
+    <form action="https://formspree.io/f/movdbojl" method="POST">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_template" value="table">
       <input type="hidden" name="_subject" value="پیام جدید از سایت شخصی ارشیا">
@@ -611,7 +618,7 @@
     themeToggle.addEventListener('click', () => {
       const isDark = body.classList.contains('dark');
       const isLight = body.classList.contains('light');
-      const lang = localStorage.getItem('language') || 'fa';
+      const lang = document.getElementById('languageSelector').value || 'fa';
 
       if (!isDark && !isLight) {
         setTheme('light', lang);
@@ -635,7 +642,7 @@
 
     setTimeout(() => {
       document.getElementById('typeText').classList.add('done');
-    }, 3000);
+    }, 970);
       // اگر صفحه با hash بارگذاری شد (مثلاً #projects)، برو بالا
       if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
         window.scrollTo(0, 0);
@@ -735,24 +742,56 @@
     updateLanguage(lang);
   });
 
-  document.addEventListener('DOMContentLoaded', async () => {
-    let detectedLang = 'fa';
+  document.addEventListener('DOMContentLoaded', () => {
+    const fallbackToIP = async () => {
+      try {
+        const res = await fetch('https://ipapi.co/json/');
+        const data = await res.json();
+        const countryCode = data.country || 'IR';
+        return countryCode !== 'IR' ? 'en' : 'fa';
+      } catch {
+        return 'fa';
+      }
+    };
 
-    try {
-      const res = await fetch('https://ipapi.co/json/');
-      const data = await res.json();
-      const countryCode = data.country || 'IR';
-      if (countryCode !== 'IR') detectedLang = 'en';
-    } catch (err) {
-      console.warn('IP detection failed, defaulting to fa');
-    }
+    const getCountryFromCoords = async (lat, lon) => {
+      try {
+        const apiKey = '23abd5a7885348fcbb6bd6eed26959d2'; // TODO: Replace with your real API key
+        const res = await fetch(`https://api.opencagedata.com/geocode/v1/json?q=${lat}+${lon}&key=${apiKey}`);
+        const data = await res.json();
+        const country = data.results[0].components.country_code.toUpperCase();
+        return country !== 'IR' ? 'en' : 'fa';
+      } catch {
+        return await fallbackToIP();
+      }
+    };
 
-    const lang = detectedLang;
+    const detectLanguage = async () => {
+      return new Promise(resolve => {
+        if ('geolocation' in navigator) {
+          navigator.geolocation.getCurrentPosition(
+            async pos => {
+              const { latitude, longitude } = pos.coords;
+              const lang = await getCountryFromCoords(latitude, longitude);
+              resolve(lang);
+            },
+            async () => {
+              const lang = await fallbackToIP();
+              resolve(lang);
+            },
+            { timeout: 3000 }
+          );
+        } else {
+          fallbackToIP().then(resolve);
+        }
+      });
+    };
 
-    languageSelector.value = lang;
-    updateLanguage(lang);
-
-    setTheme(null, lang);
+    detectLanguage().then(lang => {
+      languageSelector.value = lang;
+      updateLanguage(lang);
+      setTheme(null, lang);
+    });
   });
   </script>
 </body>
