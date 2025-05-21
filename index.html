@@ -16,6 +16,24 @@
     }
 
     @media (max-width: 768px) {
+        nav {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 0.3rem;
+          padding: 0.5rem 0;
+        }
+
+        nav a,
+        #themeToggle,
+        .lang-select {
+          padding: 0.3rem 0.6rem;
+          font-size: 0.85rem;
+          border-radius: 0.5rem;
+          flex: 1 1 40%;
+          max-width: 130px;
+          white-space: nowrap;
+        }
       header {
         flex-direction: column;
         align-items: center;
@@ -565,7 +583,7 @@
   <section class="resume" id="resume">
     <h3 data-i18n="resume.title">رزومه</h3>
     <p data-i18n="resume.description">در این بخش می‌تونی خلاصه‌ای از مهارت‌ها، تجربیات، و سوابق تحصیلی من رو بخونی. فایل کامل رزومه هم قابل دانلوده.</p>
-    <a href="assets/ArshiaMoghbel_Resume.pdf" target="_blank" download data-i18n="resume.download">📄 دانلود رزومه کامل</a>
+    <a href="ArshiaMoghbel_Resume.pdf" target="_blank" download data-i18n="resume.download">📄 دانلود رزومه کامل</a>
   </section>
 
   <!-- بخش تماس -->
