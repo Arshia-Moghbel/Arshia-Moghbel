@@ -5,28 +5,30 @@
 ---
 
 # 💫 Arshia Moghbel — Swift & Python Developer
+<p align="left">
+<img src="https://komarev.com/ghpvc/?username=ArshiaMoghbel&label=Profile%20Views&color=f1c40f&style=flat" />
+</p>
 
 > **"Every line of code is a step toward innovation."**
 
 
-Hi! I’m **Arshia Moghbel**, a passionate software engineer building elegant solutions with Swift and Python. 
+Hi! I'm **Arshia Moghbel**, an **IT student** and **Swift & Python developer** passionate about building elegant, reliable, and user-friendly software.
 
-I combine **AI** and **healthcare** interests by working on projects like **medical image analysis** and **natural language processing (NLP)**.
-Deep learning methods (especially **CNNs**) are highly effective for medical image segmentation and classification, which is exactly my area of focus.
-Similarly, **NLP** is rapidly transforming healthcare — my projects mirror these trends.
+I'm especially interested in **Apple technologies**, **Artificial Intelligence**, and **Machine Learning**. I'm continuously expanding my knowledge by building real-world projects and exploring modern software development practices.
 
-I’m constantly learning tools that boost productivity and code quality, like **GitHub Actions** (for CI/CD workflows) and **Docker** (for reliable deployments).
-Also, I practice **Machine Learning** and **Clean Code** principles to deliver readable, maintainable solutions.
+Currently, I'm learning **Machine Learning**, **Deep Learning**, **Computer Vision**, and **CI/CD** while improving my skills in **Swift**, **Python**, and open-source development.
+
+I enjoy writing clean, maintainable code and creating projects that help me grow as a developer.
 
 ---
 
 ## 🔨 Skills
 
-- **Programming Languages**: Swift (iOS/macOS development), Python (data science, ML)
-- **AI & ML**: CNNs, NLP, TensorFlow/PyTorch, Data Analysis
-- **Developer Tools**: Git, GitHub Actions, Docker, Xcode, XCTest, Core ML, Create ML
-- **Practices**: CI/CD, Clean Code, Test-Driven Development, Agile Methodologies
-- **Other**: HTML/CSS/JavaScript basics, version control, collaboration
+- **Languages:** Swift, Python, HTML, CSS, JavaScript (Basics)
+- **Apple Development:** SwiftUI, UIKit, Xcode, Core ML, Create ML
+- **Developer Tools:** Git, GitHub, GitHub Actions, Docker
+- **Currently Learning:** Machine Learning, Deep Learning, Computer Vision, CI/CD
+- **Practices:** Clean Code, Version Control, Problem Solving
 
 ---
 
@@ -34,9 +36,34 @@ Also, I practice **Machine Learning** and **Clean Code** principles to deliver r
 
 | Project | Description |
 |:---|:---|
-| 🏥 **Medical Image Analysis (CNN)** | Built a system that analyzes medical scans (MRI/X-ray) using CNNs for segmentation and anomaly detection. |
-| 🔢 **Medical NLP** | Applied NLP to parse and summarize clinical records and research abstracts. |
-| 📱 **Swift Health App** | Developed an iOS app to track health data using Swift and Apple frameworks. |
+| 🏥 **AI Medical Analysis (Work in Progress)** | Exploring Computer Vision and NLP techniques for medical image analysis and clinical text understanding in healthcare applications. |
+| 🕰️ **NixieTime** | A modern web-based Nixie clock inspired by vintage Nixie tube displays. |
+| 🤖 **AI Git Commit Generator** | Generates meaningful Git commit messages using AI. |
+| 🔐 **Telegram VPN Bot** | A Telegram bot built with Python for VPN subscription management. |
+| 🍎 **Swift Projects** | A collection of Swift and SwiftUI applications and experiments. |
+
+---
+
+## 👨‍💻 About Me
+
+- 🎓 IT Student
+- 🍎 Passionate about Apple Technologies
+- 📱 Swift Developer
+- 🐍 Python Developer
+- 🤖 Interested in AI & Machine Learning
+- 🌍 Based in Isfahan, Iran
+- 🚀 Building Open Source Projects
+- 📚 Always Learning New Technologies
+
+---
+
+## 🛠 Tech Stack
+
+<p align="left">
+
+<img src="https://skillicons.dev/icons?i=swift,python,git,github,docker,html,css,js,vscode,xcode,apple,linux,wordpress" />
+
+</p>
 
 ---
 
@@ -48,22 +75,48 @@ Also, I practice **Machine Learning** and **Clean Code** principles to deliver r
 
 ---
 
+## 📈 GitHub Activity
+
+<p align="center">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=ArshiaMoghbel&theme=react-dark"/>
+</p>
+
+---
+
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ArshiaMoghbel&show_icons=true&theme=radical&title_color=FFD700&icon_color=FFD700&text_color=FFFFFF&bg_color=000000" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=ArshiaMoghbel&show_icons=true&theme=radical&title_color=FFD700&icon_color=FFD700&text_color=FFFFFF&bg_color=000000&hide_border=true" alt="GitHub Stats" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ArshiaMoghbel&theme=radical&background=000000&stroke=FFD700" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ArshiaMoghbel&theme=radical&background=000000&stroke=FFD700&hide_border=true" alt="GitHub Streak" />
 </p>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=ArshiaMoghbel&theme=radical&no-bg=true&margin-w=15&row=2&title=MultiLanguage,Commit,Repositories,PullRequest" alt="GitHub Trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=ArshiaMoghbel&theme=radical&no-bg=true&margin-w=15&row=2&title=MultiLanguage,Commit,Repositories,PullRequest&hide_border=true&no-frame=true" alt="GitHub Trophies" />
+</p>
+
+<p align="center">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArshiaMoghbel&layout=compact&theme=radical&hide_border=true"/>
 </p>
 
 ---
 
 <p align="center">
-  📣 <strong>Let's Collaborate and Build Amazing Things Together!</strong>
+  📣 <strong>Turning ideas into elegant software with Swift, Python, and AI.</strong>
 </p>
+
+---
+
+## ⚡ Fun Fact
+
+I enjoy building elegant software, exploring Apple technologies, contributing to open source, and continuously learning new skills.
+
+---
+
+<p align="center">
+⭐ <strong>Thanks for visiting my profile! If you like my work, feel free to star my repositories and connect with me.</strong>
+</p>
+
+---
