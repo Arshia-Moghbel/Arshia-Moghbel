@@ -33,7 +33,7 @@
 
 <h2 align="center">Engineering Focus</h2>
 
-<table>
+<table align="center">
   <tr>
     <td width="50%" align="center">
       <h3>🍎 Apple Development</h3>
@@ -162,7 +162,7 @@
 
 <h2 align="center">Currently Exploring</h2>
 
-<table>
+<table align="center">
   <tr>
     <td>📱 Swift & Apple Development</td>
     <td>🤖 Machine Learning</td>
