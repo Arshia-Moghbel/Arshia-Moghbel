@@ -1,122 +1,115 @@
+ <p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1200&color=D4AF37&center=true&vCenter=true&width=800&lines=Hi%2C+I'm+Arshia+Moghbel;Python+%7C+Swift+%7C+Software+Development;Exploring+AI+%26+Modern+Technologies" alt="Typing SVG" />
+</p>
+
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=30&pause=1000&color=FFD700&background=000000&center=true&vCenter=true&width=800&lines=Hi!+I'm+Arshia+Moghbel;Swift+%26+Python+Developer;AI+%2B+Healthcare+Enthusiast" alt="Typing SVG" />
+  <a href="https://github.com/ArshiaMoghbel">
+    <img src="https://komarev.com/ghpvc/?username=ArshiaMoghbel&label=Profile%20Views&color=D4AF37&style=flat" alt="Profile Views"/>
+  </a>
 </p>
 
 ---
 
-# 💫 Arshia Moghbel — Swift & Python Developer
-<p align="left">
-<img src="https://komarev.com/ghpvc/?username=ArshiaMoghbel&label=Profile%20Views&color=f1c40f&style=flat" />
+# Arshia Moghbel
+
+<p align="center">
+  <strong>IT Student · Software Developer · Technology Enthusiast</strong>
 </p>
 
-> **"Every line of code is a step toward innovation."**
+I'm Arshia, an IT student from Isfahan, Iran, interested in software development, Apple's ecosystem, and emerging technologies.
 
+I work primarily with **Python** and explore **Swift** and Apple's development ecosystem. I'm also interested in Artificial Intelligence, Machine Learning, automation, and building practical software solutions.
 
-Hi! I'm **Arshia Moghbel**, an **IT student** and **Swift & Python developer** passionate about building elegant, reliable, and user-friendly software.
+I believe in learning through building, experimenting with new technologies, and contributing to open-source projects.
 
-I'm especially interested in **Apple technologies**, **Artificial Intelligence**, and **Machine Learning**. I'm continuously expanding my knowledge by building real-world projects and exploring modern software development practices.
+### Current Focus
 
-Currently, I'm learning **Machine Learning**, **Deep Learning**, **Computer Vision**, and **CI/CD** while improving my skills in **Swift**, **Python**, and open-source development.
-
-I enjoy writing clean, maintainable code and creating projects that help me grow as a developer.
-
----
-
-## 🔨 Skills
-
-- **Languages:** Swift, Python, HTML, CSS, JavaScript (Basics)
-- **Apple Development:** SwiftUI, UIKit, Xcode, Core ML, Create ML
-- **Developer Tools:** Git, GitHub, GitHub Actions, Docker
-- **Currently Learning:** Machine Learning, Deep Learning, Computer Vision, CI/CD
-- **Practices:** Clean Code, Version Control, Problem Solving
+- Developing practical software projects with Python.
+- Exploring Swift and Apple's development ecosystem.
+- Learning Artificial Intelligence and Machine Learning.
+- Improving software engineering and Git workflows.
+- Exploring automation, Docker, and CI/CD.
 
 ---
 
-## 🌟 Highlighted Projects
+## Technical Interests & Skills
 
-| Project | Description |
+| Category | Technologies |
 |:---|:---|
-| 🏥 **AI Medical Analysis (Work in Progress)** | Exploring Computer Vision and NLP techniques for medical image analysis and clinical text understanding in healthcare applications. |
-| 🕰️ **NixieTime** | A modern web-based Nixie clock inspired by vintage Nixie tube displays. |
-| 🤖 **AI Git Commit Generator** | Generates meaningful Git commit messages using AI. |
-| 🔐 **Telegram VPN Bot** | A Telegram bot built with Python for VPN subscription management. |
-| 🍎 **Swift Projects** | A collection of Swift and SwiftUI applications and experiments. |
+| Programming | Python, Swift, C++, HTML, CSS |
+| Web Development | WordPress |
+| Apple Ecosystem | macOS, iOS, SwiftUI, Xcode |
+| Development Tools | Git, GitHub, VS Code |
+| Infrastructure | Docker, Linux |
+| Exploring | Machine Learning, Computer Vision, CI/CD |
 
 ---
 
-## 👨‍💻 About Me
+## Featured Projects
 
-- 🎓 IT Student
-- 🍎 Passionate about Apple Technologies
-- 📱 Swift Developer
-- 🐍 Python Developer
-- 🤖 Interested in AI & Machine Learning
-- 🌍 Based in Isfahan, Iran
-- 🚀 Building Open Source Projects
-- 📚 Always Learning New Technologies
+### Software Development
+
+- **Telegram VPN Seller Bot** — A Python-based Telegram bot for managing VPN subscriptions.
+- **GoldLens** — A software project focused on tracking and analyzing gold and currency markets.
+- **NixieTime** — A web-based clock inspired by vintage Nixie tube displays.
+- **CommitCraft** — A project exploring developer productivity and Git workflows.
+
+### Open Source
+
+- **XERJ Corpus Hub** — Contributor to the XERJ open-source ecosystem.
+
+  <a href="https://hub.xerj.org/contributors/Arshia-Moghbel">View my contributor profile →</a>
 
 ---
 
-## 🛠 Tech Stack
+## Technology Stack
 
-<p align="left">
-
-<img src="https://skillicons.dev/icons?i=swift,python,git,github,docker,html,css,js,vscode,xcode,apple,linux,wordpress" />
-
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,swift,cpp,html,css,wordpress,git,github,docker,vscode,apple,linux" alt="Technology Stack"/>
 </p>
 
 ---
 
-## 💬 How to Connect
-
-- [LinkedIn 👤](https://linkedin.com/in/arshia-moghbel)
-- [Instagram 📸](https://instagram.com/arshia__m__2008)
-- [Email 📧](mailto:arshiamoghbel@icloud.com)
-
----
-
-## 📈 GitHub Activity
+## GitHub Statistics
 
 <p align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=ArshiaMoghbel&theme=react-dark"/>
-</p>
-
----
-
-## 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ArshiaMoghbel&show_icons=true&theme=radical&title_color=FFD700&icon_color=FFD700&text_color=FFFFFF&bg_color=000000&hide_border=true" alt="GitHub Stats" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=ArshiaMoghbel&show_icons=true&hide_border=true&bg_color=0D1117&title_color=D4AF37&icon_color=D4AF37&text_color=C9D1D9" alt="GitHub Statistics"/>
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArshiaMoghbel&layout=compact&hide_border=true&bg_color=0D1117&title_color=D4AF37&text_color=C9D1D9" alt="Top Languages"/>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ArshiaMoghbel&theme=radical&background=000000&stroke=FFD700&hide_border=true" alt="GitHub Streak" />
+  <img width="95%" src="https://github-readme-streak-stats.herokuapp.com/?user=ArshiaMoghbel&theme=dark&hide_border=true&background=0D1117&ring=D4AF37&fire=D4AF37&currStreakLabel=D4AF37" alt="GitHub Streak"/>
 </p>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=ArshiaMoghbel&theme=radical&no-bg=true&margin-w=15&row=2&title=MultiLanguage,Commit,Repositories,PullRequest&hide_border=true&no-frame=true" alt="GitHub Trophies" />
-</p>
-
-<p align="center">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArshiaMoghbel&layout=compact&theme=radical&hide_border=true"/>
+  <img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=ArshiaMoghbel&bg_color=0D1117&color=D4AF37&line=D4AF37&point=FFFFFF&area=true&hide_border=true" alt="GitHub Activity Graph"/>
 </p>
 
 ---
 
+## Connect With Me
+
 <p align="center">
-  📣 <strong>Turning ideas into elegant software with Swift, Python, and AI.</strong>
+  <a href="https://github.com/ArshiaMoghbel">
+    <img src="https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
+  <a href="https://linkedin.com/in/arshia-moghbel">
+    <img src="https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=0A66C2" alt="LinkedIn"/>
+  </a>
+  <a href="https://instagram.com/arshia__m__2008">
+    <img src="https://img.shields.io/badge/Instagram-0D1117?style=for-the-badge&logo=instagram&logoColor=E4405F" alt="Instagram"/>
+  </a>
+  <a href="mailto:arshiamoghbel@icloud.com">
+    <img src="https://img.shields.io/badge/Email-0D1117?style=for-the-badge&logo=icloud&logoColor=white" alt="Email"/>
+  </a>
 </p>
-
----
-
-## ⚡ Fun Fact
-
-I enjoy building elegant software, exploring Apple technologies, contributing to open source, and continuously learning new skills.
 
 ---
 
 <p align="center">
-⭐ <strong>Thanks for visiting my profile! If you like my work, feel free to star my repositories and connect with me.</strong>
+  <strong>Building, learning, and turning ideas into software.</strong>
 </p>
 
----
+<p align="center">
+  <sub>Thanks for visiting my GitHub profile.</sub>
+</p>
