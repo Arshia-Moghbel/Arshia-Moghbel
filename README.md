@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/ArshiaMoghbel">GitHub</a> ·
+  <a href="https://github.com/Arshia-Moghbel">GitHub</a> ·
   <a href="https://linkedin.com/in/arshia-moghbel">LinkedIn</a> ·
   <a href="mailto:arshiamoghbel@icloud.com">Email</a>
 </p>
@@ -84,7 +84,7 @@ Git · GitHub · Docker · Xcode · macOS · WordPress
 
 ## Connect
 
-- GitHub: [@ArshiaMoghbel](https://github.com/ArshiaMoghbel)
+- GitHub: [@Arshia Moghbel](https://github.com/Arshia-Moghbel)
 - LinkedIn: [Arshia Moghbel](https://linkedin.com/in/arshia-moghbel)
 - Instagram: [@arshia__m__2008](https://instagram.com/arshia__m__2008)
 - Email: [arshiamoghbel@icloud.com](mailto:arshiamoghbel@icloud.com)
