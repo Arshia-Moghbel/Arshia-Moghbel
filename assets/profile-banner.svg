@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080808"/>
+      <stop offset="55%" stop-color="#15130e"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9b7024"/>
+      <stop offset="50%" stop-color="#f5d27a"/>
+      <stop offset="100%" stop-color="#b88932"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0%" stop-color="#b88932" stop-opacity=".2"/>
+      <stop offset="100%" stop-color="#b88932" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="320" fill="url(#bg)"/>
+  <ellipse cx="980" cy="170" rx="360" ry="220" fill="url(#glow)"/>
+
+  <path d="M0 270 Q250 240 470 275 T900 260 T1200 275"
+        fill="none" stroke="#8f682b" stroke-opacity=".35"/>
+
+  <g fill="none" stroke="url(#gold)" stroke-width="2" opacity=".75">
+    <path d="M825 270 V155 Q825 85 895 85 Q965 85 965 155 V270"/>
+    <path d="M850 270 V160 Q850 110 895 110 Q940 110 940 160 V270"/>
+    <path d="M870 270 V170 Q870 135 895 135 Q920 135 920 170 V270"/>
+    <path d="M995 270 V125 Q995 65 1055 65 Q1115 65 1115 125 V270"/>
+    <path d="M1018 270 V130 Q1018 88 1055 88 Q1092 88 1092 130 V270"/>
+    <path d="M1038 270 V140 Q1038 110 1055 110 Q1072 110 1072 140 V270"/>
+    <path d="M760 270 V200 Q760 155 800 155 Q840 155 840 200 V270"/>
+    <path d="M1140 270 V205 Q1140 165 1170 165 Q1200 165 1200 205 V270"/>
+  </g>
+
+  <g fill="#d6aa4d" opacity=".7">
+    <circle cx="895" cy="185" r="3"/>
+    <circle cx="1055" cy="165" r="3"/>
+    <circle cx="800" cy="210" r="3"/>
+    <circle cx="1170" cy="215" r="3"/>
+  </g>
+
+  <path d="M55 55 V265" stroke="url(#gold)" stroke-width="2"/>
+  <path d="M55 55 H75 M55 265 H75" stroke="url(#gold)" stroke-width="2"/>
+
+  <text x="100" y="139" fill="#f5f1e8"
+        font-family="Georgia,serif" font-size="64"
+        letter-spacing="1">Arshia <tspan fill="#e0b54f">Moghbel</tspan></text>
+
+  <text x="103" y="183" fill="#d4d0c7"
+        font-family="Arial,sans-serif" font-size="19"
+        letter-spacing="3">SOFTWARE DEVELOPER · IT STUDENT</text>
+
+  <path d="M103 211 H630" stroke="url(#gold)" stroke-width="1.5"/>
+
+  <text x="103" y="246" fill="#c4a15a"
+        font-family="Arial,sans-serif" font-size="15"
+        letter-spacing="2">SWIFT · PYTHON · APPLE TECHNOLOGIES · OPEN SOURCE</text>
+
+  <g fill="#d8b35e" opacity=".7">
+    <circle cx="1140" cy="48" r="1.5"/>
+    <circle cx="1080" cy="35" r="2"/>
+    <circle cx="1170" cy="100" r="1.5"/>
+    <circle cx="735" cy="65" r="1.5"/>
+    <circle cx="690" cy="120" r="1"/>
+  </g>
+
+  <path d="M0 299 H1200" stroke="url(#gold)" stroke-width="1" opacity=".6"/>
+</svg>

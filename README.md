@@ -1,100 +1,226 @@
-# Arshia Moghbel
-
-<p align="center">
-  <strong>Software Developer · IT Student · Open Source Contributor</strong>
+# <p align="center">
+  <img src="assets/profile-banner.svg" width="100%" alt="Arshia Moghbel - Software Developer"/>
 </p>
 
 <p align="center">
-  <a href="https://github.com/Arshia-Moghbel">GitHub</a> ·
-  <a href="https://linkedin.com/in/arshia-moghbel">LinkedIn</a> ·
+  <a href="https://github.com/Arshia-Moghbel">GitHub</a>
+  &nbsp;·&nbsp;
+  <a href="https://linkedin.com/in/arshia-moghbel">LinkedIn</a>
+  &nbsp;·&nbsp;
   <a href="mailto:arshiamoghbel@icloud.com">Email</a>
 </p>
 
 ---
 
-## About
+<h2 align="center">About Me</h2>
 
-I'm Arshia Moghbel, an IT student and software developer based in Isfahan, Iran.
+<p align="center">
+  I'm <strong>Arshia Moghbel</strong>, an IT student and software developer
+  based in Isfahan, Iran.
+</p>
 
-My primary interests are software engineering, Apple's development ecosystem, Python, and Artificial Intelligence.
+<p align="center">
+  I'm interested in software engineering, Apple's development ecosystem,
+  Python, and Artificial Intelligence.
+</p>
 
-I enjoy exploring new technologies, building practical applications, solving engineering problems, and contributing to open-source projects.
+<p align="center">
+  I enjoy building practical applications, exploring new technologies,
+  solving engineering problems, and contributing to open-source projects.
+</p>
 
-My approach to development is centered around continuous learning, clean code, and creating software that solves real problems.
+---
 
-## Areas of Interest
+<h2 align="center">Engineering Focus</h2>
 
-- **Software Development:** Python, Swift, C++
-- **Apple Ecosystem:** Swift, SwiftUI, iOS and macOS development
-- **Artificial Intelligence:** Machine Learning, Computer Vision, AI-powered applications
-- **Web Development:** WordPress, HTML, CSS
-- **Developer Tools:** Git, GitHub, Docker, automation
-- **Open Source:** Collaborative development and community contributions
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <h3>🍎 Apple Development</h3>
+      Swift · SwiftUI · Xcode · iOS · macOS
+    </td>
+    <td width="50%" align="center">
+      <h3>🐍 Python Development</h3>
+      Automation · APIs · Backend · Scripting
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <h3>🤖 Artificial Intelligence</h3>
+      Machine Learning · Computer Vision · AI
+    </td>
+    <td width="50%" align="center">
+      <h3>⚙️ Software Engineering</h3>
+      Git · Architecture · Testing · CI/CD
+    </td>
+  </tr>
+</table>
 
-## Selected Projects
+---
 
-### Telegram VPN Seller Bot
+<h2 align="center">Featured Projects</h2>
 
-A Python-based Telegram bot for VPN subscription management, built with modern Python tooling.
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🤖 Telegram VPN Seller Bot</h3>
+      <p>
+        A Python-based Telegram bot for VPN subscription management,
+        featuring database integration and automated workflows.
+      </p>
+      <p><strong>Stack:</strong> Python · aiogram · SQLAlchemy · SQLite</p>
+      <a href="https://github.com/Arshia-Moghbel/Telegram-VPN-Seller-Bot">
+        View Repository →
+      </a>
+    </td>
+    <td width="50%" valign="top">
+      <h3>📈 GoldLens</h3>
+      <p>
+        A software project focused on tracking and analyzing
+        gold and currency market data.
+      </p>
+      <p><strong>Focus:</strong> Financial Data · Software Development</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🕰️ NixieTime</h3>
+      <p>
+        A web-based clock inspired by vintage Nixie tube displays.
+      </p>
+      <p><strong>Focus:</strong> Web Development · JavaScript</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🛠️ Developer Tools</h3>
+      <p>
+        Experiments involving Git automation, network diagnostics,
+        productivity tools, and software engineering.
+      </p>
+      <p><strong>Focus:</strong> Python · Automation · CLI</p>
+    </td>
+  </tr>
+</table>
 
-[View Repository](https://github.com/Arshia-Moghbel/Telegram-VPN-Seller-Bot)
+<p align="center">
+  <a href="https://github.com/Arshia-Moghbel?tab=repositories">
+    <strong>Explore All My Repositories →</strong>
+  </a>
+</p>
 
-### Other Projects & Experiments
+---
 
-I also explore projects involving:
+<h2 align="center">Open Source</h2>
 
-- Gold and currency market tracking.
-- Developer productivity and Git automation.
-- Network diagnostics and testing tools.
-- Computer vision and AI applications.
-- Web development and automation.
+<p align="center">
+  I believe open-source software is one of the best ways to learn,
+  collaborate, and contribute to the developer community.
+</p>
 
-Explore my repositories:
+<p align="center">
+  <strong>XERJ Corpus Hub Contributor</strong>
+</p>
 
-[github.com/Arshia Moghbel](https://github.com/Arshia-Moghbel?tab=repositories)
+<p align="center">
+  My contributor profile is featured in the XERJ Corpus Hub.
+</p>
 
-## Open Source
+<p align="center">
+  <a href="https://hub.xerj.org/contributors/Arshia-Moghbel">
+    View Contributor Profile →
+  </a>
+</p>
 
-I believe open-source software is one of the best ways to learn, collaborate, and contribute to the developer community.
+---
 
-I'm interested in collaborating on meaningful projects, improving existing software, and learning from experienced developers.
+<h2 align="center">Technologies & Tools</h2>
 
-**XERJ Corpus Hub Contributor**
+<h3 align="center">Programming Languages</h3>
 
-[View Contributor Profile](https://hub.xerj.org/contributors/Arshia-Moghbel)
+<p align="center">
+  Python · Swift · C++ · HTML · CSS · JavaScript
+</p>
 
-## Technologies
+<h3 align="center">Apple Ecosystem</h3>
 
-**Programming Languages**
+<p align="center">
+  Swift · SwiftUI · Xcode · iOS · macOS
+</p>
 
-Python · Swift · C++ · HTML · CSS · JavaScript
+<h3 align="center">Developer Tools</h3>
 
-**Tools & Platforms**
+<p align="center">
+  Git · GitHub · GitHub Actions · Docker · VS Code
+</p>
 
-Git · GitHub · Docker · Xcode · macOS · WordPress
+<h3 align="center">Other Technologies</h3>
 
-## Currently Exploring
+<p align="center">
+  WordPress · Linux · Automation
+</p>
 
-- Machine Learning and Deep Learning
-- Computer Vision
-- Swift and Apple's software ecosystem
-- Software architecture and engineering practices
-- CI/CD and development automation
-- Open-source collaboration
+---
 
-## Connect
+<h2 align="center">Currently Exploring</h2>
 
-- GitHub: [@Arshia Moghbel](https://github.com/Arshia-Moghbel)
-- LinkedIn: [Arshia Moghbel](https://linkedin.com/in/arshia-moghbel)
-- Instagram: [@arshia__m__2008](https://instagram.com/arshia__m__2008)
-- Email: [arshiamoghbel@icloud.com](mailto:arshiamoghbel@icloud.com)
+<table>
+  <tr>
+    <td>📱 Swift & Apple Development</td>
+    <td>🤖 Machine Learning</td>
+  </tr>
+  <tr>
+    <td>👁️ Computer Vision</td>
+    <td>🧠 Deep Learning</td>
+  </tr>
+  <tr>
+    <td>🏗️ Software Architecture</td>
+    <td>🔄 CI/CD & Automation</td>
+  </tr>
+  <tr>
+    <td>🌐 Open Source Development</td>
+    <td>🔐 Software Security</td>
+  </tr>
+</table>
+
+---
+
+<h2 align="center">Development Principles</h2>
+
+<p align="center">
+  Clean Code &nbsp;·&nbsp;
+  Maintainability &nbsp;·&nbsp;
+  Security &nbsp;·&nbsp;
+  Documentation &nbsp;·&nbsp;
+  Continuous Learning
+</p>
+
+---
+
+<h2 align="center">Connect With Me</h2>
+
+<p align="center">
+  <a href="https://github.com/Arshia-Moghbel">
+    GitHub
+  </a>
+  &nbsp;·&nbsp;
+  <a href="https://linkedin.com/in/arshia-moghbel">
+    LinkedIn
+  </a>
+  &nbsp;·&nbsp;
+  <a href="https://instagram.com/arshia__m__2008">
+    Instagram
+  </a>
+  &nbsp;·&nbsp;
+  <a href="mailto:arshiamoghbel@icloud.com">
+    Email
+  </a>
+</p>
 
 ---
 
 <p align="center">
-  <strong>Building. Learning. Contributing.</strong>
+  <strong>BUILDING · LEARNING · CONTRIBUTING</strong>
 </p>
 
 <p align="center">
-  <sub>Thanks for visiting my profile.</sub>
+  <sub>Thanks for visiting my GitHub profile.</sub>
 </p>
