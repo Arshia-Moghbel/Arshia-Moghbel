@@ -51,7 +51,7 @@ I also explore projects involving:
 
 Explore my repositories:
 
-[github.com/ArshiaMoghbel](https://github.com/ArshiaMoghbel?tab=repositories)
+[github.com/Arshia Moghbel](https://github.com/Arshia-Moghbel?tab=repositories)
 
 ## Open Source
 
